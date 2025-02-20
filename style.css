@@ -47,8 +47,6 @@ ul li a {
 }
 
 
-
-
 /*sobre mim*/
 #sobre-mim {
     background-color: #D9AAEE;
@@ -56,7 +54,7 @@ ul li a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-   padding: 2%;
+    padding: 2%;
 
 }
 
@@ -82,7 +80,8 @@ ul li a {
     justify-content: space-around;
     padding: 2%;
 }
-#fotinha-pc{
+
+#fotinha-pc {
     width: 25%;
 }
 
@@ -94,10 +93,8 @@ ul li a {
 }
 
 
-
-
-/* projetos */ 
-#projetos{
+/* projetos */
+#projetos {
     background-color: #D9AAEE;
     display: flex;
     justify-content: center;
@@ -106,32 +103,33 @@ ul li a {
     padding: 2%;
 }
 
-#carrossel{
+#carrossel {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10%;
 }
 
-#foto{
+#foto {
     width: 500px;
     height: 300px;
     border-radius: 10px;
     border: 0.4px solid white;
 }
 
-#botao2{
-   transform: rotate(180deg) ;
- cursor: pointer;}
-
-#botao1{
+#botao2 {
+    transform: rotate(180deg);
     cursor: pointer;
 }
 
-/* footer */ 
+#botao1 {
+    cursor: pointer;
+}
 
-#contato{
-    border-top:  0.4px solid white;
+/* footer */
+
+#contato {
+    border-top: 0.4px solid white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -144,10 +142,11 @@ img {
     margin: 1%;
 }
 
-.gh-mail{
+.gh-mail {
     display: flex;
-align-items: center;
+    align-items: center;
 }
+
 .gh-mail p {
     font-size: 100%;
 }
@@ -166,18 +165,115 @@ p {
     font-size: 150%;
 }
 
-.topo{
+.topo {
     transform: rotate(-90deg);
 
     width: 3%;
-opacity: 0;
+    opacity: 0;
 
     display: inline-block;
-    position: fixed; 
+    position: fixed;
     right: 15px;
     bottom: 15px;
 }
 
-.visivel{
+.visivel {
     opacity: 1;
+}
+
+
+/* responsividade */
+
+
+.hamburger {
+    opacity: 0;
+}
+
+@media (max-width: 879px) {
+
+    /* header */
+    ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .hamburger {
+        display: inline-block;
+        height: 2em;
+        width: 2em;
+        filter: invert(100%);
+        opacity: 1;
+
+    }
+
+    .navbar {
+        position: absolute;
+        right: 10px;
+        top: 70px;
+        z-index: 10;
+        width: 200px;
+        background-color: rgba(255, 255, 255, 0.122);
+        border: 0.4px solid white;
+        opacity: 0;
+        transition: all 200ms ease-out;
+    }
+
+    header.menu-visivel>.navbar {
+        top: 70px;
+        opacity: 1;
+    }
+
+    #alterna-menu {
+        cursor: pointer;
+    }
+
+
+    #sobre-mim,
+    #expectativas {
+        flex-direction: column;
+
+    }
+
+    #expectativas {
+        flex-direction: column-reverse;
+
+    }
+
+    #foto {
+        width: 300px;
+        height: 150px;
+
+    }
+
+}
+
+
+
+@media (min-width: 601px) and (max-width: 879px) {
+    h1 {
+        font-size: 250%;
+    }
+
+    p {
+        font-size: 120%;
+    }
+
+    .gh-mail p {
+        font-size: 80%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 200%;
+    }
+
+    p {
+        font-size: 110%;
+    }
+
+    .gh-mail p {
+        font-size: 60%;
+    }
 }

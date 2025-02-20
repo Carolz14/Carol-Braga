@@ -11,8 +11,6 @@ const linkImg = [
 
 let atual = 0;
 
-
-
 const fotoEl = document.querySelector("#foto");
 const linkEl =document.querySelector("#link"); 
 const proximoEl = document.querySelector("#botao2");
@@ -55,3 +53,19 @@ bodyEl.addEventListener("wheel", function () {
 
     
 })
+
+
+
+
+
+/*Menu */
+
+
+let botaoEl = document.querySelector('#alterna-menu');
+let headerEl = document.querySelector('header');
+
+function alternaMenu() {
+  headerEl.classList.toggle('menu-visivel');
+}
+
+botaoEl.addEventListener('click', alternaMenu);

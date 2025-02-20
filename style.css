@@ -1,0 +1,183 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #D9AAEE;
+}
+
+/* header */
+#logo {
+    font-family: "Sour Gummy", serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: white;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgba(255, 255, 255, 0.122);
+    border: 0.4px solid white;
+    border-radius: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+ul li a {
+    font-family: "Reddit Sans", serif;
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+
+/*sobre mim*/
+#sobre-mim {
+    background-color: #D9AAEE;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   padding: 2%;
+
+}
+
+#sobre-mim div {
+
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: justify;
+}
+
+#fotinha-me {
+    border-radius: 45%;
+    width: 25%;
+    border: 3px solid white;
+}
+
+/*expectativas*/
+#expectativas {
+    background-color: #F4DAFF;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2%;
+}
+#fotinha-pc{
+    width: 25%;
+}
+
+#expectativas div {
+
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: justify;
+}
+
+
+
+
+/* projetos */ 
+#projetos{
+    background-color: #D9AAEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+}
+
+#carrossel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+#foto{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    border: 0.4px solid white;
+}
+
+#botao2{
+   transform: rotate(180deg) ;
+ cursor: pointer;}
+
+#botao1{
+    cursor: pointer;
+}
+
+/* footer */ 
+
+#contato{
+    border-top:  0.4px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    background-color: #F4DAFF;
+}
+
+img {
+    width: 6%;
+    margin: 1%;
+}
+
+.gh-mail{
+    display: flex;
+align-items: center;
+}
+.gh-mail p {
+    font-size: 100%;
+}
+
+/* textos */
+
+h1 {
+    font-family: "Mooli", serif;
+    color: #97009f;
+    font-size: 300%;
+}
+
+p {
+    font-family: "Reddit Sans", serif;
+    color: #56005B;
+    font-size: 150%;
+}
+
+.topo{
+    transform: rotate(-90deg);
+
+    width: 3%;
+opacity: 0;
+
+    display: inline-block;
+    position: fixed; 
+    right: 15px;
+    bottom: 15px;
+}
+
+.visivel{
+    opacity: 1;
+}
